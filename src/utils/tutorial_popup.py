@@ -6,7 +6,7 @@ def TutorialPopup():
     # Criando a janela do popup
     popup = QDialog()
     popup.setWindowTitle("Tutorial")
-    popup.resize(600, 400)  # Aumente o tamanho inicial da janela aqui (largura x altura)
+    popup.resize(600, 400)  
 
     # Texto explicativo
     tutorial_text = (
@@ -27,8 +27,7 @@ def TutorialPopup():
         "<li><b>Parâmetros intrísecos fora do limite permitido:</b> exibirá  um popup.</li>"
         "<li><b>Limites: </b></li>"
         "<ol>"
-        "<li><b>Distância Focal:</b> (min: 1, max: 1000)</li>"
-        "<li><b>Foco (dist_focal):</b> (min: 1, max: 1000)</li>"
+        "<li><b>Distância Focal (dist_focal):</b> (min: 1, max: 1000)</li>"
         "<li><b>Centro da imagem (ccd_x,ccd_y):</b> (min: 10, max: 50)</li>"
         "<li><b>Coeficientes de escala (n_pixels_base):</b> (min: 640, max: 1920)</li>"
         "<li><b>Coeficientes de escala (n_pixels_altura):</b> (min: 480, max: 1080)</li>"
@@ -55,8 +54,8 @@ def TutorialPopup():
     popup.setWindowIcon(QIcon('./assets/img/icon.png'))
     # Adicionando um QLabel com texto formatado
     tutorial_label = QLabel(tutorial_text)
-    tutorial_label.setWordWrap(True)  # Quebra de linha automática
-    tutorial_label.setTextFormat(Qt.TextFormat.RichText)  # Permite HTML no texto
+    tutorial_label.setWordWrap(True) 
+    tutorial_label.setTextFormat(Qt.TextFormat.RichText)  
     layout.addWidget(tutorial_label)
 
     # Botões de escolha de mesh
@@ -85,16 +84,10 @@ def TutorialPopup():
         button.clicked.connect(lambda _, path=mesh_path: choose_mesh(path))
         mesh_buttons_layout.addWidget(button)
 
-    # Adicionar espaçamento abaixo dos botões
     spacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
     mesh_buttons_layout.addSpacerItem(spacer)
-
     layout.addLayout(mesh_buttons_layout)
-
-    # Define o layout na janela
     popup.setLayout(layout)
-
-    # Exibe o popup e espera o usuário escolher
     popup.exec_()
 
     # Retorna a mesh escolhida

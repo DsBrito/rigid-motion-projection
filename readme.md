@@ -5,6 +5,7 @@ Este projeto é um sistema interativo que permite a visualização e manipulaç�
 ---
 
 ## **📊 Funcionalidades**
+
 - **Carregamento de Malhas STL**:
   - Visualize objetos 3D diretamente na interface.
 - **Ajustes de Parâmetros**:
@@ -50,7 +51,7 @@ rigid-motion-projection/
 │   │   └── tutorial_popup.py
 │   ├── world/
 │       └── world_config.py
-│   
+│
 ├── main.py
 ├── readme.md
 ```
@@ -58,6 +59,7 @@ rigid-motion-projection/
 ---
 
 ## **🔧 Como Configurar**
+
 1. **Clone o Repositório**:
    ```bash
    git clone https://github.com/DsBrito/rigid-motion-projection.git
@@ -68,7 +70,9 @@ rigid-motion-projection/
    ```
 
 ---
+
 ## **🚀 Como Usar**
+
 1. **Carregue uma Malha STL**:
    - Use o botão correspondente para carregar seu arquivo `.stl`.
 2. **Ajuste os Parâmetros**:
@@ -77,6 +81,7 @@ rigid-motion-projection/
    - Acompanhe as alterações no gráfico e no log em tempo real.
 
 ### **Interface Principal**
+
 - **Gráficos 3D**: Mostram a visualização da malha STL em perspectiva.
 - **Projeção 2D**: Demonstra como o objeto é projetado no plano.
 - **Campos de Entrada**: Ajuste parâmetros da câmera, rotação e posicionamento.
@@ -84,6 +89,7 @@ rigid-motion-projection/
 ---
 
 ## **💡 Dicas de Uso**
+
 - Consulte o **Tutorial** integrado para se familiarizar com o projeto.
 - Experimente diferentes valores para observar como cada parâmetro influencia a projeção.
 - Para evitar erros, insira apenas números válidos nos campos.
@@ -91,7 +97,16 @@ rigid-motion-projection/
 
 ---
 
+## **💡 Em execução**
+
+- Tutorial
+  ![Tutorial](./assets/img/tutorial.png)
+
+- Interface
+  ![Interface](./assets/img/interface.png)
+
 ## **🛠️ Desenvolvido com**
+
 - **[PyQt5](https://www.riverbankcomputing.com/software/pyqt/intro)**: Para criação da interface gráfica.
 - **[Matplotlib](https://matplotlib.org/)**: Para renderização dos gráficos.
 - **[numpy](https://numpy.org/)**: Para manipulação de dados matemáticos.
@@ -101,6 +116,7 @@ rigid-motion-projection/
 ---
 
 ## **👩‍💻 Contribuindo**
+
 1. Faça um fork do projeto.
 2. Crie uma branch para sua feature:
    ```bash
@@ -119,12 +135,15 @@ rigid-motion-projection/
 ---
 
 ## **📜 Licença**
+
 Este projeto é licenciado sob a [MIT License](LICENSE).
 
 ---
 
 ## **📞 Contato**
+
 Caso tenha dúvidas ou sugestões, entre em contato:
+
 - **Nome**: Dionatas Santos Brito
 - **Instagram**: @dssbrito
 - **Gmail**: dsbrito.dev@gmail.com
