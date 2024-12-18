@@ -199,7 +199,7 @@ class World:
                     self.ke=key
                     self.te=text
                     print(f"Erro ao converter {key} {text}")
-                    print(erro)
+
         self.log("-----------------------------------------------------------------------------------------")
         print(erro)
         if(erro):
