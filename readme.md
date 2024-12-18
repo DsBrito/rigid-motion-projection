@@ -100,10 +100,16 @@ rigid-motion-projection/
 ## **💡 Em execução**
 
 - Tutorial
-  ![Tutorial](./assets/img/tutorial.png)
+<div style="display: inline_block" align="center">
+<img src="./assets/img/tutorial.png" alt="Tutorial" width="45%"/>
+  </div>
+
 
 - Interface
-  ![Interface](./assets/img/interface.png)
+<div style="display: inline_block" align="center">
+<img src="./assets/img/interface.png" alt="Interface" width="70%"/>
+  </div>
+
 
 ## **🛠️ Desenvolvido com**
 
