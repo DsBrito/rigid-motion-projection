@@ -55,7 +55,14 @@ rigid-motion-projection/
 ├── main.py
 ├── readme.md
 ```
-
+### Pré-requisitos: 
+- Python 3.8 ou superior.
+-  Principais Bibliotecas necessárias (Pode precisar de outras):
+   ```bash
+    pip install PyQt5
+    pip install matplotlib
+    pip install numpy-stl
+    ```
 ---
 
 ## **🔧 Como Configurar**
@@ -66,6 +73,7 @@ rigid-motion-projection/
    ```
 2. **Execute o Programa**:
    ```bash
+   cd rigid-motion-projection
    python main.py
    ```
 
