@@ -55,7 +55,7 @@ rigid-motion-projection/
 ├── main.py
 ├── readme.md
 ```
-### Pré-requisitos: 
+## **❗ Pré-requisitos**
 - Python 3.8 ou superior.
 -  Principais Bibliotecas necessárias (Pode precisar de outras):
    ```bash
