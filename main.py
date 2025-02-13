@@ -96,7 +96,9 @@ class MainWindow(QMainWindow, Plots, Camera, World, Intrinsic,Reset):
             self.log("Saindo da funcao __init__.")
             self.log("-----------------------------------------")
             self.log("-----------------------------------------")
-
+            self.reset()
+            self.reset_parameter()
+            self.log("-----------------------------------------")
 
         except Exception as e:
             self.log(f"Erro ao configurar a interface grafica: {e}")
