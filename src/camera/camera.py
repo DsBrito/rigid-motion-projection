@@ -174,7 +174,7 @@ class Camera:
                     self.te=text
                     print(f"Erro ao converter {key} {text}")
 
-        self.log("-----------------------------------------------------------------------------------------")
+        self.log("-----------------------------------------")
         if(erro):
             QMessageBox.warning(self, "Erro de Validacao", "Os seguintes campos estao fora dos limites ou invalidos:\n\n  "+self.ke+" : "+self.te)
         else:
