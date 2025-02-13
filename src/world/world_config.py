@@ -200,7 +200,7 @@ class World:
                     self.te=text
                     print(f"Erro ao converter {key} {text}")
 
-        self.log("-----------------------------------------------------------------------------------------")
+        self.log("-----------------------------------------")
         print(erro)
         if(erro):
             QMessageBox.warning(self, "Erro de Validacao", "Os seguintes campos estao fora dos limites ou invalidos:\n\n  "+self.ke+" : "+self.te)
@@ -209,6 +209,14 @@ class World:
         self.log("Saindo da funcao update_world")
         self.log("-----------------------------------------")
         self.log("-----------------------------------------")   
+
+    
+    def move (self, dx,dy,dz):
+        T = np.eye(4)
+        T[0,-1] = dx
+        T[1,-1] = dy
+        T[2,-1] = dz
+        return T
 
     def world_action(self, key, value):
         """
@@ -254,9 +262,13 @@ class World:
 
         if "X(move)" in key:
             self.T =move(value, 0, 0)
-            self.cam = np.dot(self.T, self.zero_cam)
+            #self.cam = np.dot(self.T, self.zero_cam) ##FIXME: Erro esta aqui, era pra ter utilizado "self.cam"
+            self.cam = np.dot(self.T, self.cam)
+
             self.update_canvas()          
 
+
+            self.update_canvas()    
         elif "X(angle)" in key:
             self.T = x_rotation(value)
             self.cam = np.dot(self.T, self.cam)
