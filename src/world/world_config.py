@@ -210,13 +210,7 @@ class World:
         self.log("-----------------------------------------")
         self.log("-----------------------------------------")   
 
-    
-    def move (self, dx,dy,dz):
-        T = np.eye(4)
-        T[0,-1] = dx
-        T[1,-1] = dy
-        T[2,-1] = dz
-        return T
+
 
     def world_action(self, key, value):
         """
